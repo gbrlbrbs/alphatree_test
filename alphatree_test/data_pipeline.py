@@ -23,8 +23,9 @@ class DataPipeline():
 
     def __load_data(self):
         _ = list(map(self.file_reader.create_consolidated_file, self.dataframes))
-
+    
     def start_pipeline(self):
         self.__get_data()
         self.__transform_data()
         self.__load_data()
+        self.file_reader.remove_staging_files()

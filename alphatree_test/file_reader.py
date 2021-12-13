@@ -8,7 +8,6 @@ from time import sleep
 
 class FileReader():
     def __init__(self) -> None:
-        self.current_time = dt.datetime.now()
         self.staging_path = c.DATA_PATH / 'staging'
         self.processed_path = c.DATA_PATH / 'processed'
 
