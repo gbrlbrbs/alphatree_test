@@ -8,7 +8,7 @@ def main():
         np.sqrt,
         str.lower
     ]
-    combinator = pd.concat
+    combinator = lambda x, y: pd.concat([x, y])
     columns = [
         ['num_col1', 'num_col2'],
         ['num_col1', 'num_col3'],

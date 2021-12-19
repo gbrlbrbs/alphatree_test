@@ -11,7 +11,7 @@ class FileReader():
         self.staging_path = c.DATA_PATH / 'staging'
         self.processed_path = c.DATA_PATH / 'processed'
 
-    def __remove_file(self, file: Path):
+    def __remove_file(self, file: Path) -> None:
         file.unlink(missing_ok=True)
 
     def list_staging_files(self):
